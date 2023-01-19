@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Virgin Games" verbose="1" >
+    <listeners>
+        <listener class-name="com.virgingames.customlisteners.CustomListeners"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="Homepage Test" >
+        <classes>
+            <class name="com.virgingames.testsuite.HomePageTest"/>
+        </classes>
+    </test>
+</suite>

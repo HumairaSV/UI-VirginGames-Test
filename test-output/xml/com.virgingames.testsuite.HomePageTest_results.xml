@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Homepage Test"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.731">
+  <properties />
+  
+  
+            <testcase name="clickOnGameDisplayedUnderDifferentCategories" time="0.731" classname="com.virgingames.testsuite.HomePageTest" />
+      
+</testsuite>
