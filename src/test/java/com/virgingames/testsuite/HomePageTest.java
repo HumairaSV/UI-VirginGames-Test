@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 public class HomePageTest extends BaseTest {
     HomePage homePage = new HomePage();
+     GamePage gamePage = new GamePage();
 
    /* choose from the below games in the below variable to test if the game is clickable on homepage
     Secrets of the Phoenix, Double Bubble Jackpot, Lightning Dice, Multihand Blackjack, Slingo Centurion, Blox Bingo, Tiki's Catch of the Day*/
@@ -18,12 +19,13 @@ public class HomePageTest extends BaseTest {
     @BeforeMethod(alwaysRun = true)
     public void inIt() {
         homePage = new HomePage();
+        gamePage = new GamePage();
     }
 
     @Test
     public void clickOnGameDisplayedUnderDifferentCategories(){
         homePage.clickOnAcceptCookiesButton();
         homePage.selectGameTab(game);
-        Assert.assertTrue(homePage.verifyPageName().contains(game), "Not navigated to the selected game page");
+        Assert.assertTrue(gamePage.verifyPageName().contains(game), "Not navigated to the selected game page");
     }
 }
